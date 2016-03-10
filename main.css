@@ -7,6 +7,7 @@ body {
   text-align:center;
 }
 #nav {
+  height: 100px;
   padding:0px 10px;
   float:left;
   background-color:rgb(200, 200, 200);
@@ -17,7 +18,7 @@ body {
   display:block;
 }
 #main {
-  height:100px;
+  height: 100px;
   float:none;
   background-color: rgb(200, 200, 200);
   text-align:center;
