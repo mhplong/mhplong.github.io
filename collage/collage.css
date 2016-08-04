@@ -10,7 +10,7 @@ header, main, aside, footer {
   color:brown;
   text-align: center;
   background-color: rgb(200, 200, 200);
-  border: 5px inset black;
+  border: 5px solid black;
 }
 
 header {
@@ -26,8 +26,9 @@ main {
 }
 aside {
   float:left;
-  width: 330px;
+  width: 335px;
   min-height: 500px;
+  border-left: none;
 }
 footer {
   clear:both;
