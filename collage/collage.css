@@ -1,0 +1,51 @@
+/* setting up a fixed width */
+body {
+  width: 1020px;
+  margin: 50px auto;
+  background-color: gray;
+}
+
+/* main element setup */
+header, main, aside, footer {
+  color:brown;
+  text-align: center;
+  background-color: rgb(200, 200, 200);
+  border: 5px inset black;
+}
+
+header {
+  width: 1010px;
+  height: 200px;
+  vertical-align: middle;
+}
+
+main {
+  float:left;
+  width:670px;
+  min-height: 500px;
+}
+aside {
+  float:left;
+  width: 330px;
+  min-height: 500px;
+}
+footer {
+  clear:both;
+  width: 1010px;
+  min-height: 40px;
+}
+
+/* extra stuff */
+header, footer {
+  display:table;
+}
+
+header p, footer p {
+  display:table-cell;
+  vertical-align: middle;
+  color: brown;
+}
+
+main, aside, footer {
+  border-top: none;
+}
