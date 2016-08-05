@@ -7,7 +7,6 @@ body {
 
 /* main element setup */
 header, main, aside, footer {
-  color:brown;
   text-align: center;
   background-color: rgb(200, 200, 200);
   border: 5px solid black;
@@ -17,18 +16,23 @@ header {
   width: 1010px;
   height: 200px;
   vertical-align: middle;
+  background-image: linear-gradient(0deg, lightgray, gray);
+  color:black;
 }
 
 main {
   float:left;
   width:670px;
   min-height: 500px;
+  background-image: linear-gradient(90deg, gray, lightgray 10%, lightgray);
 }
+
 aside {
   float:left;
   width: 335px;
   min-height: 500px;
   border-left: none;
+  background-image: linear-gradient(90deg, lightgray 80%, gray);
 }
 footer {
   clear:both;
@@ -41,10 +45,9 @@ header, footer {
   display:table;
 }
 
-header p, footer p {
+#headerText, footer p {
   display:table-cell;
   vertical-align: middle;
-  color: brown;
 }
 
 main, aside, footer {
