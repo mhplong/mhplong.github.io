@@ -24,7 +24,6 @@ main {
   float:left;
   width:670px;
   min-height: 500px;
-  background-image: linear-gradient(90deg, gray, lightgray 10%, lightgray);
 }
 
 aside {
@@ -32,7 +31,6 @@ aside {
   width: 335px;
   min-height: 500px;
   border-left: none;
-  background-image: linear-gradient(90deg, lightgray 80%, gray);
 }
 footer {
   clear:both;
