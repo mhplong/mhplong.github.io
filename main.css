@@ -1,31 +1,4 @@
-body {
-  margin: auto;
-  width: 500px;
-}
-#header {
-  font-size: 3em;
-  clear:both;
-  text-align:center;
-}
-#header p {
-  margin: 0px;
-}
-#nav {
-  height: 100px;
-  width: 33%;
-  padding:0px 10px;
-  float:left;
-  background-color:rgb(200, 200, 200);
-  text-align:center;
-  border: 5px rgb(230, 230, 230) solid;
-}
-#nav a {
-  display:block;
-}
-#main {
-  height: 100px;
-  float:none;
-  background-color: rgb(200, 200, 200);
-  text-align:center;
-  border: 5px rgb(230, 230, 230) solid;
+.jumbotron {
+  border-radius: 0;
+  margin: 0;
 }
