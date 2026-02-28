@@ -28,7 +28,7 @@
           <a class="nav-link" href="/">Home</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="tabletopics.html">Random Questions</a>
+          <a class="nav-link" href="questionlist.html">Random Questions</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
@@ -54,7 +54,7 @@
     $.getJSON("data/Questions.json", function (data) {
       var items = [];
       $.each(data, function (key, val) {
-        items.push("<table-topic order='" + val.Order + "' header='" + val.Name + "'>" + val.Description + "</table-topic>");
+        items.push("<question-card order='" + val.Order + "' header='" + val.Name + "'>" + val.Description + "</question-card>");
       });
 
       $(items.join("")).appendTo("#questions");

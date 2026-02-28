@@ -1,4 +1,4 @@
-class TableTopic extends HTMLElement {
+class QuestionCard extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
@@ -6,7 +6,7 @@ class TableTopic extends HTMLElement {
   }
 
   connectedCallback() {
-    $.get("js/templates/tabletopic.template.html", (data) => {   
+    $.get("js/templates/questioncard.template.html", (data) => {   
       var slotData = this.innerHTML;
       this.innerHTML = data;
 
@@ -16,4 +16,4 @@ class TableTopic extends HTMLElement {
   }
 }
 
-customElements.define("table-topic", TableTopic);
+customElements.define("question-card", QuestionCard);
