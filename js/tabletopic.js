@@ -16,4 +16,4 @@ class QuestionCard extends HTMLElement {
   }
 }
 
-customElements.define("question-card", QuestionCard);
+export { QuestionCard };
