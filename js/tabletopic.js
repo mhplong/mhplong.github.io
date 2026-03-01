@@ -13,6 +13,13 @@ class QuestionCard extends HTMLElement {
       this.querySelector("slot[name='header']").innerHTML = this.getAttribute("header");
       this.querySelector(".card-text").innerHTML = slotData;
     });
+
+    $(this).on("click", function () {
+      $(this).addClass("fullscreen");
+      setTimeout(() => {
+        $(this).removeClass("fullscreen");
+      }, 2000);
+    });
   }
 }
 
