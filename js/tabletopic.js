@@ -6,7 +6,7 @@ class QuestionCard extends HTMLElement {
   }
 
   connectedCallback() {
-    $.get("js/templates/questioncard.template.html", (data) => {   
+    $.get("js/templates/questioncard.template.html", (data) => {
       var slotData = this.innerHTML;
       this.innerHTML = data;
 
@@ -14,13 +14,31 @@ class QuestionCard extends HTMLElement {
       this.querySelector(".card-text").innerHTML = slotData;
     });
 
-    $(this).on("click", function () {
-      $(this).addClass("fullscreen");
-      setTimeout(() => {
-        $(this).removeClass("fullscreen");
-      }, 2000);
-    });
+    $(this).on("click", () => { this.#selectCard(); });
   }
+
+  #selectCard(e) {
+    var duration = this.getAttribute("duration") * 60 * 1000;
+    
+    var centeredItems = $(".middle");
+    if (centeredItems.length > 0) {
+      centeredItems.removeClass("middle");
+      centeredItems.removeClass("fullscreen");
+      centeredItems.children(".card").addClass("hover");
+    }
+
+    $(this).addClass("middle");
+    $(this).addClass("fullscreen");
+
+    $(this).children(".card").removeClass("hover");
+    setTimeout(() => {
+      $(this).removeClass("fullscreen");
+      $(this).removeClass("middle");
+
+      $(this).children(".card").addClass("hover");
+    }, duration);
+  }
+
 }
 
 export { QuestionCard };
