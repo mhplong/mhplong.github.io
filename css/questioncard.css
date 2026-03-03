@@ -18,8 +18,8 @@
 
   .middle {
     position: absolute;
-    top: 25%;
-    left: 25%;
+    top: 33%;
+    left: 33%;
   }
 
   @keyframes fullscreen {
