@@ -38,7 +38,7 @@
     $.getJSON("data/Questions.json", function (data) {
       var items = [];
       $.each(data, function (key, val) {
-        items.push(`<question-card order='${val.Order}' duration='1' header='${val.Name}'>
+        items.push(`<question-card order='${val.Order}' duration='0.5' header='${val.Name}'>
                       ${val.Description}
                     </question-card>`);
       });
