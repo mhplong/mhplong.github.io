@@ -17,7 +17,7 @@
   }
 
   .middle {
-    position: absolute;
+    position: fixed;
     top: 33%;
     left: 33%;
   }
